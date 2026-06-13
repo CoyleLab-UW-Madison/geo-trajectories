@@ -69,4 +69,4 @@ python scripts/06_visualize_results.py --input all_pixels_with_pseudotime.parque
 - `trajectories.py`: MDS fitting and 3D Waddington trajectory visualization.
 - `pseudotime.py`: Vectorized pseudotime estimation and image mapping.
 - `utils.py`: Compression-enabled data I/O and helper functions.
-"# geo-trajectories" 
+
