@@ -35,9 +35,7 @@ def main():
         # Calculate pseudotime
         # Rename columns to match expected format 'Z_score_day'
         calc_df.columns = ['day'] + [c.split('_')[-1] for c in z_cols]
-        # Wait, calculate_pseudotime expects 'Z_score_X' where X is the day
-        # Let's fix the column names in the function call
-        
+
         group['pseudotime'] = calculate_pseudotime(group, tau=args.tau)
         results.append(group)
 
